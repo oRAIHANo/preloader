@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.preloader {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50px;
+    transition: 0.5s;
+    padding: 75px;
+    z-index: 10;
+}
+
+
+.preloader:hover {
+    border-radius: 100%;
+}
+
+/* FIRST PRELOADER */
+.box-container {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: #a55c1b;
+    background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+    ;
+    position: relative;
+    top: -50px;
+    left: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+}
+
+.box-1 {
+    height: 50px;
+    width: 50px;
+    background-color: gold;
+    border-top-left-radius: 50px;
+    animation-name: box-1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 2s;
+    animation-delay: 2s;
+}
+
+@keyframes box-1 {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: bottom right;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        transform-origin: bottom right;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        transform-origin: bottom right;
+    }
+}
+
+.box-2 {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-top-right-radius: 50px;
+    animation-name: box-2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 2s;
+    animation-delay: 2s;
+}
+
+.box-2 i {
+    margin: 20px;
+}
+
+@keyframes box-2 {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: bottom left;
+    }
+
+    50% {
+        transform: rotate(-90deg);
+        transform-origin: bottom left;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        transform-origin: bottom left;
+    }
+}
+
+.box-3 {
+    height: 50px;
+    width: 50px;
+    background-color: gold;
+    border-bottom-left-radius: 50px;
+    height: 25px;
+    width: 25px;
+    margin-left: 25px;
+    animation-name: box-3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 2s;
+    animation-delay: 2s;
+}
+
+@keyframes box-3 {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: top right;
+    }
+
+    50% {
+        transform: rotate(-90deg);
+        transform-origin: top right;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        transform-origin: top right;
+    }
+}
+
+.box-4 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(212, 201, 201);
+    border-bottom-right-radius: 50px;
+    animation-name: box-4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 2s;
+    animation-delay: 2s;
+}
+
+@keyframes box-4 {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: top left;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        transform-origin: top left;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        transform-origin: top left;
+    }
+}
+
+/* SECOND PRELOADER */
+#second i {
+    font-size: 50px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#square1 {
+    animation-name: square1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: rgb(255, 255, 0);
+
+}
+
+@keyframes square1 {
+    0% {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    20% {
+        position: relative;
+        top: 0px;
+        left: 50px;
+    }
+
+    40% {
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+
+    60% {
+        position: relative;
+        top: 50px;
+        left: 0px;
+    }
+
+    80% {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+#square2 {
+    animation-name: square2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: rgb(153, 255, 0);
+}
+
+@keyframes square2 {
+    0% {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    20% {
+        position: relative;
+        left: 0px;
+        top: 50px;
+    }
+
+    40% {
+        position: relative;
+        top: 50px;
+        left: -50px;
+    }
+
+    60% {
+        position: relative;
+        top: 0px;
+        left: -50px;
+    }
+
+    80% {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+#square3 {
+    animation-name: square3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    top: 0px;
+    left: 50px;
+    color: rgb(0, 255, 255);
+
+}
+
+@keyframes square3 {
+    0% {
+        position: relative;
+        top: 0px;
+        left: 50px;
+    }
+
+    20% {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    40% {
+        position: relative;
+        top: -50px;
+        left: 0px;
+    }
+
+    60% {
+        position: relative;
+        top: -50px;
+        left: 50px;
+    }
+
+    80% {
+        position: relative;
+        top: 0px;
+        left: 50px;
+    }
+
+}
+
+/* THIRD PRELOADER */
+.preloader #outer-circle {
+    color: black;
+    font-size: 100px;
+    border-top: 10px solid gold;
+    border-radius: 100%;
+    animation-name: x;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes x {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#circle {
+    position: relative;
+    top: -75px;
+    left: 25px;
+    font-size: 50px;
+    color: black;
+    border: none;
+
+}
+
+/* FOURTH PRELOADER */
+.circle1 {
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    position: relative;
+    top: -30px;
+    left: -30px;
+    animation-name: zoom;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes zoom {
+    0% {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+
+    }
+
+    50% {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 197, 28, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+
+    100% {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(190, 28, 255, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+}
+
+.circle2 {
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    position: relative;
+    top: -175px;
+    left: -15px;
+    animation-name: zoom;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    border: 2px solid white;
+}
+
+@keyframes zoom {
+    0% {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(190, 28, 255, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+
+    50% {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+
+    100% {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 197, 28, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+}
+
+.circle3 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: relative;
+    top: -290px;
+    animation-name: zoom;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    transform-origin: center;
+    border: 2px solid white;
+}
+
+@keyframes zoom {
+    0% {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 197, 28, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+
+    50% {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(190, 28, 255, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+
+    100% {
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+}
+
+/* FIFTH PRELOADER */
+#fifth {
+    background-color: black;
+    border: 2px solid white;
+}
+
+.fa-rocket {
+    font-size: 50px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 30px;
+    left: 20px;
+    animation-name: rocket;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: white;
+}
+
+@keyframes rocket {
+    0% {
+        position: relative;
+        top: 30px;
+        left: 20px;
+    }
+
+    25% {
+        position: relative;
+        top: 35px;
+        left: 25px;
+    }
+
+    50% {
+        position: relative;
+        top: 30px;
+        left: 20px;
+    }
+
+    75% {
+        position: relative;
+        top: 25px;
+        left: 15px;
+    }
+
+    100% {
+        position: relative;
+        top: 30px;
+        left: 20px;
+    }
+}
+
+.fa-fire {
+    transform: rotate(260deg);
+    position: relative;
+    top: 0px;
+    left: 10px;
+    animation-name: fire;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fire {
+    0% {
+        position: relative;
+        top: 0px;
+        left: 10px;
+        color: gold;
+    }
+
+    25% {
+        position: relative;
+        top: 5px;
+        left: 15px;
+        color: orange;
+    }
+
+    50% {
+        position: relative;
+        top: 0px;
+        left: 10px;
+        color: gold;
+    }
+
+    75% {
+        position: relative;
+        top: -5px;
+        left: 5px;
+        color: orange;
+    }
+
+    100% {
+        position: relative;
+        top: 0px;
+        left: 10px;
+        color: gold;
+    }
+}
+
+
+
