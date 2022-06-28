@@ -16,6 +16,7 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 .preloader {
@@ -555,7 +556,7 @@
     position: relative;
     top: 50px;
     left: 35px;
-    color: gold;
+    color: white;
     z-index: 10;
 }
 
@@ -601,8 +602,59 @@
     transition: 0.5s;
 }
 
+@media (max-width:1400px) {
+    #sixth{
+        display: none;
+    }
+}
 
 /* SEVENT PRELOADER */
+#seventh {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#seventh .water {
+    background-image: url('water.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 60px;
+    left: -75px;
+    height: 120px;
+    width: 250px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s;
+    animation: water 10s linear infinite;
+}
+
+#seventh:hover .water{
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    transition: 0.5s;
+}
+
+.boat{
+    position: relative;
+    top: -40px;
+    left: 100px;
+    z-index: 1000;
+}
+
+
+/* EIGHT PRELOADER */
+
+
+/* NINTH PRELOADER */
+.fa-laptop {
+    font-size: 100px;
+    color: black;
+}
+
+
+/* TENTH PRELOADER */
 .ring {
     position: relative;
     top: 50%;
@@ -681,5 +733,3 @@ span:before {
         transform: rotate(405deg);
     }
 }
-
-/* EIGHT PRELOADER */
